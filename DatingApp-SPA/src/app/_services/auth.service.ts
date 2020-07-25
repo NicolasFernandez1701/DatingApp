@@ -9,7 +9,7 @@ export class AuthService
 {
   baseurl = 'http://localhost:5000/api/auth/';
 
-  constructor(private http: HttpClient) {}//inyeccion del httpclinet
+  constructor(private http: HttpClient) {}
   login(model: any) //Consultar/reforzar con olmo 
   {
     return this.http.post(this.baseurl + 'login', model).pipe(
