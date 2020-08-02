@@ -60,7 +60,7 @@ namespace DatingApp.API.Data
             using (var hmac = new System.Security.Cryptography.HMACSHA512())
             {
                 passwordSalt = hmac.Key;
-                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password)); //Convertimos el passowr en un array de bytes para poder calcularlo
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password)); //Convertimos el password en un array de bytes para poder calcularlo
             }
         }
 
