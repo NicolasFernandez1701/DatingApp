@@ -32,6 +32,7 @@ export class AuthService
   {
     return this.http.post(this.baseurl + 'register', model);
   }
+  
   loggedIn()
   {
     const token = localStorage.getItem('token');
